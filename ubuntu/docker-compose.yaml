@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  os:
+    build: .docker
+    ports:
+      - 8080:8080
+      - 13389:3389
+    volumes:
+      - ./volumes:/mnt/volumes
+
